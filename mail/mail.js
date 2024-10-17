@@ -33,6 +33,6 @@ for (let i = 0; i < hashiraEmails.length; i++) {
         //ci sara un messagio : 'Mi dispiace, non sei nella lista degli invitati'
         messagio = 'Mi dispiace, non sei nella lista degli invitati';
     }
-
-
 }
+
+console.log(messagio)
