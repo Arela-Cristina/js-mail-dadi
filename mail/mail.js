@@ -18,7 +18,13 @@ let mail = promp('Benvenuto alla festa della Demon Corp, inserisci la tua mail')
 console.log(`input utente =>`, mail);
 //salvo un messaggio vuoto in una variabile
 let messagio = '';
+//ciclo ogni elemento del array 
+for (let i = 0; i < hashiraEmails.length; i++) {
+    //ciclo ogni elemento del array
+    let hashiraEmail = hashiraEmails[i];
+    console.log(`iteraccion ${i} =>`, hashiraEmail)
 //se la mail appartiene a la lista degli invitati
 //ci sara un messagio : ' Benvenuto alla festa'
 // se la mail non  appartiene a la lista degli invitati
 //ci sara un messagio : 'Mi dispiace, non sei nella lista degli invitati'
+}
