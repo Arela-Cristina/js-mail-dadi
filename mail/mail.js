@@ -14,6 +14,8 @@ const hashiraEmails = [
     "obanai.iguro@demoncorp.com"
 ];
 //tramite un prompt chiedo di scrivere agli invitati la loro mail 
+let mail = promp('Benvenuto alla festa della Demon Corp, inserisci la tua mail');//stringa
+console.log(`input utente =>`, mail);
 //salvo il value in una variabile
 //se la mail appartiene a la lista degli invitati
 //ci sara un messagio : ' Benvenuto alla festa'
