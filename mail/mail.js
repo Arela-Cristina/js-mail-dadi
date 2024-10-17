@@ -23,8 +23,13 @@ for (let i = 0; i < hashiraEmails.length; i++) {
     //ciclo ogni elemento del array
     let hashiraEmail = hashiraEmails[i];
     console.log(`iteraccion ${i} =>`, hashiraEmail)
-//se la mail appartiene a la lista degli invitati
-//ci sara un messagio : ' Benvenuto alla festa'
-// se la mail non  appartiene a la lista degli invitati
-//ci sara un messagio : 'Mi dispiace, non sei nella lista degli invitati'
+    //se la mail appartiene a la lista degli invitati
+    if (mail === hashiraEmail) {
+        //ci sara un messagio : ' Benvenuto alla festa'
+        messagio = 'Benvenuto alla festa';
+        break
+    }
+
+    // se la mail non  appartiene a la lista degli invitati
+    //ci sara un messagio : 'Mi dispiace, non sei nella lista degli invitati'
 }
