@@ -14,10 +14,10 @@ const hashiraEmails = [
     "obanai.iguro@demoncorp.com"
 ];
 //tramite un prompt chiedo di scrivere agli invitati la loro mail 
-let mail = promp('Benvenuto alla festa della Demon Corp, inserisci la tua mail');//stringa
+let mail = prompt('Benvenuto alla festa della Demon Corp, inserisci la tua mail');//stringa
 console.log(`input utente =>`, mail);
 //salvo un messaggio vuoto in una variabile
-let messagio = '';
+let messaggio = '';
 //ciclo ogni elemento del array 
 for (let i = 0; i < hashiraEmails.length; i++) {
     //ciclo ogni elemento del array
@@ -25,14 +25,14 @@ for (let i = 0; i < hashiraEmails.length; i++) {
     console.log(`iteraccion ${i} =>`, hashiraEmail)
     //se la mail appartiene a la lista degli invitati
     if (mail === hashiraEmail) {
-        //ci sara un messagio : ' Benvenuto alla festa'
-        messagio = 'Benvenuto alla festa';
-        break
+        //ci sara un messaggio : ' Benvenuto alla festa'
+        messaggio = 'Benvenuto alla festa';
+        i = hashiraEmails.length;
     } else {
         // se la mail non  appartiene a la lista degli invitati
-        //ci sara un messagio : 'Mi dispiace, non sei nella lista degli invitati'
-        messagio = 'Mi dispiace, non sei nella lista degli invitati';
+        //ci sara un messaggio : 'Mi dispiace, non sei nella lista degli invitati'
+        messaggio = 'Mi dispiace, non sei nella lista degli invitati';
     }
 }
 
-console.log(messagio)
+console.log(messaggio)
