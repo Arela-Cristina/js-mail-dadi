@@ -5,7 +5,7 @@
 let messaggio = '';
 
 //chiediamo un numero random al utente atraverso un promt
-let numUser = parseInt(prompt('Scrivi un numero dal 1 al 6'));
+let numUser = parseInt(prompt('Scrivi un numero dal 1 al 6')); //Generare un numero random da 1 a 6 ):
 console.log(typeof numUser);
 if (isNaN(numUser) || numUser < 1 || numUser > 6) {
     messaggio = 'Devi inserire un numero valido'
