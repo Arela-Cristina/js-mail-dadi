@@ -17,7 +17,7 @@ const hashiraEmails = [
 let mail = prompt('Benvenuto alla festa della Demon Corp, inserisci la tua mail');//stringa
 console.log(`input utente =>`, mail);
 //salvo un messaggio vuoto in una variabile
-let messaggio = '';
+let messaggio = ''; // 2 option - first step => let found = false
 //ciclo ogni elemento del array 
 for (let i = 0; i < hashiraEmails.length; i++) {
     //ciclo ogni elemento del array
@@ -27,7 +27,7 @@ for (let i = 0; i < hashiraEmails.length; i++) {
     if (mail === hashiraEmail) {
         //ci sara un messaggio : ' Benvenuto alla festa'
         messaggio = 'Benvenuto alla festa';
-        i = hashiraEmails.length;
+        i = hashiraEmails.length;// // 2 option - second step => found = true // la funzione includes ci ritorna un booleano, meglio il booleano e non manipolare il indice. // Break potenzialmente potrebbe essere uttilizzato ma bisogna capire bene ed stare atento, perche diventa difficile debuggare e capire come funziona la logica dietro il ciclo, tuttavia, se abbiamo un array di 2mill. mail, il break ci sta.
     } else {
         // se la mail non  appartiene a la lista degli invitati
         //ci sara un messaggio : 'Mi dispiace, non sei nella lista degli invitati'
